@@ -20,7 +20,6 @@ variable "vsphere_password" {
 variable "datacenter" {
   description = "vSphere data center"
   type        = string
-  default = 
 }
 
 variable "cluster" {
@@ -41,4 +40,5 @@ variable "network_name" {
 variable "ubuntu_name" {
   description = "Ubuntu name (ie: image_path)"
   type        = string
+  default = "tf-edu-ubuntu"
 }
