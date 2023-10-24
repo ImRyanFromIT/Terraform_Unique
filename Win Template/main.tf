@@ -27,7 +27,7 @@ data "vsphere_network" "network" {
 }
 
 data "vsphere_virtual_machine" "win_2022" {
-  name          = "/${var.datacenter}/vm/${var.ubuntu_name}"
+  name          = "/${var.datacenter}/vm/${var.windows_name}"
   datacenter_id = data.vsphere_datacenter.datacenter.id
 }
 

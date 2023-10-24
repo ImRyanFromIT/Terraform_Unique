@@ -39,7 +39,7 @@ variable "network_name" {
   type        = string
 }
 
-variable "ubuntu_name" {
+variable "windows_name" {
   description = "Windows Server name (ie: image_path)"
   type        = string
   default = "2022_TEMPLATE"
