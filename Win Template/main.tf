@@ -55,7 +55,7 @@ resource "vsphere_virtual_machine" "win_2022 test" {
   guest_id = "Microsoft Windows Server 2022 (64-bit) - VBS true"
 
   clone {
-    template_uuid = data.vsphere_virtual_machine.ubuntu.id
+    template_uuid = data.vsphere_virtual_machine.windows_2022.id
   }
 }
 
