@@ -52,7 +52,7 @@ resource "vsphere_virtual_machine" "win_2022_test" {
     size             = 32
   }
 
-  guest_id = "Microsoft Windows Server 2022 (64-bit) - VBS true"
+  guest_id = "windows2019srvNext_64Guest"
 
   clone {
     template_uuid = data.vsphere_virtual_machine.win_2022.id
