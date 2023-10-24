@@ -55,10 +55,10 @@ resource "vsphere_virtual_machine" "win_2022_test" {
   guest_id = "Microsoft Windows Server 2022 (64-bit) - VBS true"
 
   clone {
-    template_uuid = data.vsphere_virtual_machine.windows_2022.id
+    template_uuid = data.vsphere_virtual_machine.win_2022.id
   }
 }
 
 output "vm_ip" {
-  value = vsphere_virtual_machine.learn.guest_ip_addresses
+  value = vsphere_virtual_machine.win_2022_test.guest_ip_addresses
 }
