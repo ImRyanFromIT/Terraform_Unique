@@ -44,3 +44,5 @@ variable "windows_name" {
   type        = string
   default = "2022_TEMPLATE"
 }
+
+# test
